@@ -5,7 +5,7 @@ module.exports = {
   watch: true,
   mode: "development",
   devtool: "source-map",
-  entry: "./src/app.ts",
+  entry: "./src/Game.ts",
   module: {
     rules: [
       {
@@ -21,10 +21,6 @@ module.exports = {
   output: {
     filename: "game.js",
     path: path.resolve(__dirname, "dist"),
-    library: {
-      name: "Game",
-      type: "var",
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
